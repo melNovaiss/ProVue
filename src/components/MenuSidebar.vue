@@ -1,0 +1,95 @@
+<template>
+  <hr />
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link px-4" href="/">
+        <i class="bi bi-house"></i>
+        Inicio</a
+      >
+    </li>
+    <li class="nav-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-0">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            <i class="bi bi-list-ul"></i> Cadastros
+          </button>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse text-white"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul class="navbar-nav" style="height: auto">
+                <li class="nav-item"><a class="nav-link px-4" href="/clientes"> Clientes</a></li>
+                <li class="nav-item"><a class="nav-link px-4" href="/funcionarios"> Funcionarios</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</template>
+
+<script>
+export default {
+  name: "MenuSidebar",
+};
+</script>
+
+<style scoped>
+.card-body {
+  background-color: #485166 !important;
+}
+
+hr {
+  /* border-top: 1px solid; */
+  margin: 0.8rem 0.8rem;
+}
+
+a, .accordion-button{
+  color: #ffffffbe !important;
+}
+
+.bi {
+  /* padding-left: 2px; */
+  padding-right: 0.8rem;
+}
+
+.nav-item:hover, .accordion-button:hover {
+  background-color: rgba(0, 0, 0, 0.175);
+  cursor: pointer;
+}
+
+.accordion, .accordion-item, .collapsed{
+  background-color: #303c54;
+  --bs-accordion-border-color: none;
+}
+
+.accordion-button {
+  background-color: #303c54;
+  color: white;
+}
+
+.accordion-button::after {
+  content: "\F282";
+  font-family: "bootstrap-icons";
+  background-image: none;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.accordion-body {
+  background-color: #3a445f;
+}
+</style>
+
