@@ -36,7 +36,7 @@
                 <div class="col-4 text-black-50 fs-7">
                   {{ c.id }}
                 </div>
-                <div class="col-6 text-black-50 fs-7">
+                <div class="col-8 text-black-50 fs-7">
                   {{ c.dtCad }}
                 </div>
               </div>

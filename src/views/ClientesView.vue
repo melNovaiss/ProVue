@@ -1,5 +1,5 @@
 <template>
-  <div class="row py-4 px-2" style="width: 93rem">
+  <div class="row py-4 px-2">
     <div class="col-4">
       <CliList />
     </div>
