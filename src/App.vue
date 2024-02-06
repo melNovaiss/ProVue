@@ -13,9 +13,10 @@
     <div class="col-10 px-0">
       <div class="content">
         <nav class="navbar bg-body-tertiary shadow">
-          <div class="container-fluid">
+          <div class="container justify-content-end py-2 px-4">
+            <img src="../src/assets/icon.svg" class="rounded-circle" height="32" width="32">
             <button
-              class="navbar-toggler border-0"
+              class="navbar-toggler border-0 d-none"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarToggleExternalContent"
@@ -52,7 +53,7 @@ body {
 
 .sidebar {
   height: 100vh;
-  background-color: #303c54;
+  background-color: #00B1B0;
   color: white;
   /* width: 230px; */
   /* position: fixed; */
@@ -64,7 +65,7 @@ body {
   /* width: calc(100% - 230px); */
   /* height: 100vh; */
   /* margin-left: 230px; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 input {

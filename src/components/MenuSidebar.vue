@@ -7,35 +7,44 @@
         Inicio</a
       >
     </li>
-    <li class="nav-item">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item border-0">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
-          >
-            <i class="bi bi-list-ul"></i> Cadastros
-          </button>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse text-white"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <ul class="navbar-nav" style="height: auto">
-                <li class="nav-item"><a class="nav-link px-4" href="/clientes"> Clientes</a></li>
-                <li class="nav-item"><a class="nav-link px-4" href="/funcionarios"> Funcionarios</a></li>
-              </ul>
+    <hr />
+    <div>
+      <!-- <span>Menu</span> -->
+      <li class="nav-item">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item border-0">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              <i class="bi bi-list-ul"></i> Cadastros
+            </button>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse text-white"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="navbar-nav" style="height: auto">
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="/clientes"> Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="/funcionarios"> Funcionarios</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </li>
+      </li>
+    </div>
   </ul>
+  <hr />
 </template>
 
 <script>
@@ -46,7 +55,7 @@ export default {
 
 <style scoped>
 .card-body {
-  background-color: #485166 !important;
+  background-color: rgba(0, 0, 0, 0.175);
 }
 
 hr {
@@ -54,8 +63,9 @@ hr {
   margin: 0.8rem 0.8rem;
 }
 
-a, .accordion-button{
-  color: #ffffffbe !important;
+a,
+.accordion-button {
+  color: white !important;
 }
 
 .bi {
@@ -63,18 +73,29 @@ a, .accordion-button{
   padding-right: 0.8rem;
 }
 
-.nav-item:hover, .accordion-button:hover {
-  background-color: rgba(0, 0, 0, 0.175);
+.nav-item:hover,
+.accordion-button:hover {
+  background-color: rgba(201, 201, 201, 0.192);
   cursor: pointer;
 }
 
-.accordion, .accordion-item, .collapsed{
-  background-color: #303c54;
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.accordion-button:hover{
+  font-weight: bold;
+}
+
+.accordion,
+.accordion-item,
+.collapsed {
+  background-color: #00b1b0;
   --bs-accordion-border-color: none;
 }
 
 .accordion-button {
-  background-color: #303c54;
+  background-color: #00b1b0;
   color: white;
 }
 
@@ -89,7 +110,6 @@ a, .accordion-button{
 }
 
 .accordion-body {
-  background-color: #3a445f;
+  background-color: rgba(0, 0, 0, 0.175);
 }
 </style>
-
