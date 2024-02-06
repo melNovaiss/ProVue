@@ -65,7 +65,7 @@ hr {
 
 a,
 .accordion-button {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.808);
 }
 
 .bi {
@@ -80,11 +80,11 @@ a,
 }
 
 .nav-link:hover {
-  font-weight: bold;
+  color: white;
 }
 
 .accordion-button:hover{
-  font-weight: bold;
+  color: white;
 }
 
 .accordion,
@@ -96,7 +96,7 @@ a,
 
 .accordion-button {
   background-color: #00b1b0;
-  color: white;
+  color: rgba(255, 255, 255, 0.808);
 }
 
 .accordion-button::after {
