@@ -119,4 +119,8 @@ export default {
 .fs-7 {
   font-size: 0.9rem !important;
 }
+
+.form-control {
+  background-color: #f6f9ff;
+}
 </style>

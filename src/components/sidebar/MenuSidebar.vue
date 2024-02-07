@@ -1,50 +1,46 @@
 <template>
-  <hr />
+  <hr class="my-0" />
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link px-4" href="/">
+      <a class="nav-link px-4 textSid" href="/">
         <i class="bi bi-house"></i>
         Inicio</a
       >
     </li>
-    <hr />
-    <div>
-      <!-- <span>Menu</span> -->
-      <li class="nav-item">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item border-0">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
-              <i class="bi bi-list-ul"></i> Cadastros
-            </button>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse text-white"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body m-3 rounded">
-                <ul class="navbar-nav" style="height: auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/clientes"> Clientes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/funcionarios"> Funcionários</a>
-                  </li>
-                </ul>
-              </div>
+    <li class="nav-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-0">
+          <button
+            class="accordion-button collapsed textSid textSid"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            <i class="bi bi-list-ul"></i> Cadastros
+          </button>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse text-white"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body m-3 px-2 rounded">
+              <ul class="navbar-nav" style="height: auto">
+                <li class="nav-item px-2">
+                  <a class="nav-link textSid" href="/clientes"> Clientes</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link textSid" href="/funcionarios"> Funcionários</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </li>
-    </div>
+      </div>
+    </li>
   </ul>
-  <hr />
+  <hr class="my-0" />
 </template>
 
 <script>
@@ -60,7 +56,11 @@ export default {
 
 hr {
   /* border-top: 1px solid; */
-  margin: 0.8rem 0.8rem;
+  margin: 1.3rem 1.3rem;
+}
+
+.textSid {
+  font-size: 1rem;
 }
 
 a,
@@ -69,7 +69,6 @@ a,
 }
 
 .bi {
-  /* padding-left: 2px; */
   padding-right: 0.8rem;
 }
 
@@ -81,10 +80,12 @@ a,
 
 .nav-link:hover {
   color: white;
+  font-weight: 600;
 }
 
-.accordion-button:hover{
+.accordion-button:hover {
   color: white;
+  font-weight: 600;
 }
 
 .accordion,

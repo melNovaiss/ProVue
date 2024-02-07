@@ -28,9 +28,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.form-control {
-  background-color: #f6f9ff;
-}
-</style>

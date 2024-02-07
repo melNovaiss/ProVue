@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center pt-4">
+  <div class="d-flex justify-content-center py-4">
     <span>BIG</span>
   </div>
   <div>

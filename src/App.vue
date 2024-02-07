@@ -40,10 +40,6 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.bi {
-  padding-right: 0.8rem;
-}
-
 .sidebar {
   height: 100vh;
   background-color: #00b1b0;
