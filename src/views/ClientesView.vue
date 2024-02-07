@@ -1,15 +1,18 @@
 <template>
-  <div class="row py-4 px-2">
-    <div class="col-4">
+  <div class="container-fluid">
+  <div class="row py-4">
+    <div class="col-md-4">
       <CliList />
     </div>
-    <div class="col-8">
+    <div class="col-md-8">
       <div class="card border-light shadow-sm">
         <div class="card-body">
           <CliForm />
         </div>
       </div>
     </div>
+  </div>
+
   </div>
 </template>
 

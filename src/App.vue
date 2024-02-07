@@ -1,46 +1,35 @@
 <template>
-  <div class="row">
-    <div class="col-2 px-0">
-      <div class="sidebar px-4" id="navbarToggleExternalContent">
-        <div class="d-flex justify-content-center">
-          <img class="my-3" width="40" height="40" src="../src/assets/logo.png" alt="logo" />
-        </div>
-        <div>
-          <MenuSidebar />
-        </div>
-      </div>
-    </div>
-    <div class="col-10 px-0">
-      <div class="content">
-        <nav class="navbar bg-body-tertiary shadow">
-          <div class="container justify-content-end py-2 px-4">
-            <img src="../src/assets/icon.svg" class="rounded-circle" height="32" width="32">
-            <button
-              class="navbar-toggler border-0 d-none"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarToggleExternalContent"
-              aria-controls="navbarToggleExternalContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="bi bi-list fs-2"></i>
-            </button>
+  <div v-if="$route.name !== 'login'">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 px-0">
+          <div class="sidebar">
+            <Sidebar />
           </div>
-        </nav>
-        <router-view />
+        </div>
+        <div class="col-md-10 px-0">
+          <div class="content">
+            <Navbar />
+            <router-view />
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div v-else>
+    <router-view />
   </div>
 </template>
 
 <script>
-import MenuSidebar from "@/components/MenuSidebar.vue";
+import Sidebar from "@/components/sidebar/Sidebar.vue";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: "app",
   components: {
-    MenuSidebar,
+    Sidebar,
+    Navbar,
   },
 };
 </script>
@@ -51,21 +40,19 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.sidebar {
-  height: 100vh;
-  background-color: #00B1B0;
-  color: white;
-  /* width: 230px; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 0; */
+.bi {
+  padding-right: 0.8rem;
 }
 
-.content {
-  /* width: calc(100% - 230px); */
-  /* height: 100vh; */
-  /* margin-left: 230px; */
-  /* overflow-x: hidden; */
+.sidebar {
+  height: 100vh;
+  background-color: #00b1b0;
+  color: white;
+}
+
+.dropdown-menu {
+  top: 120% !important;
+  left: -127px !important;
 }
 
 input {

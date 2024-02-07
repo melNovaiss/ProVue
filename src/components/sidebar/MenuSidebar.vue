@@ -28,13 +28,13 @@
               class="accordion-collapse collapse text-white"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body m-3 rounded">
                 <ul class="navbar-nav" style="height: auto">
                   <li class="nav-item">
-                    <a class="nav-link px-4" href="/clientes"> Clientes</a>
+                    <a class="nav-link" href="/clientes"> Clientes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link px-4" href="/funcionarios"> Funcionarios</a>
+                    <a class="nav-link" href="/funcionarios"> Funcionários</a>
                   </li>
                 </ul>
               </div>
