@@ -1,5 +1,11 @@
 <template>
-  <form class="form" method="POST" @submit.prevent="createCli">
+  <form
+    class="form"
+    method="POST"
+    @submit.prevent="createCli"
+    :class="{ 'was-validated': formSubmitted && (cpf === '' || nome === '') }"
+    novalidate
+  >
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button
@@ -65,13 +71,25 @@
               <span class="input-group-text shadow-sm"
                 ><i class="bi bi-person-fill"></i
               ></span>
-              <input type="text" class="form-control" id="cpf" v-model="cpf" />
+              <input
+                type="text"
+                class="form-control"
+                id="cpf"
+                v-model="cpf"
+                required="required"
+              />
             </div>
           </div>
           <div class="col-6">
             <div class="mb-3">
               <label class="form-label">Nome *</label>
-              <input type="text" class="form-control" id="nome" v-model="nome" />
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                v-model="nome"
+                required="required"
+              />
             </div>
           </div>
         </div>
@@ -141,6 +159,7 @@ export default {
         compl: "",
       },
       contato: { tel: "", cel: "", email: "" },
+      formSubmitted: false,
     };
   },
   methods: {
@@ -157,6 +176,12 @@ export default {
       return dataFormatada;
     },
     async createCli() {
+      this.formSubmitted = true;
+      
+      if (this.cpf === "" || this.nome === "") {
+        return;
+      }
+
       const dataAtual = new Date().toISOString();
 
       const data = {

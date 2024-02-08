@@ -34,7 +34,7 @@
     </div>
     <div class="col-2">
       <div class="mb-3">
-        <label class="form-label">Cód. Município *</label>
+        <label class="form-label">Cód. Munic *</label>
         <input type="text" class="form-control" id="cod" v-model="endereco.cod" />
       </div>
     </div>

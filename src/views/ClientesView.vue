@@ -1,18 +1,17 @@
 <template>
   <div class="container-fluid">
-  <div class="row py-4">
-    <div class="col-md-4">
-      <CliList />
-    </div>
-    <div class="col-md-8">
-      <div class="card border-light shadow-sm">
-        <div class="card-body">
-          <CliForm />
+    <div class="row py-4">
+      <div class="col-md-4 pe-0">
+        <CliList />
+      </div>
+      <div class="col-md-8">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <CliForm />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
   </div>
 </template>
 
