@@ -68,15 +68,16 @@
           <div class="col-4">
             <label class="form-label">CPF/CNPJ *</label>
             <div class="input-group mb-3">
-              <span class="input-group-text shadow-sm"
-                ><i class="bi bi-person-fill"></i
-              ></span>
+              <span class="input-group-text shadow-sm">
+                <i :class="cpf.length <= 11 ? 'bi bi-person-fill' : 'bi bi-building-fill'"></i>
+              </span>
               <input
                 type="text"
                 class="form-control"
                 id="cpf"
                 v-model="cpf"
                 required="required"
+                maxlength="14"
               />
             </div>
           </div>
@@ -147,7 +148,7 @@ export default {
   },
   data() {
     return {
-      cpf: null,
+      cpf: "",
       nome: "",
       endereco: {
         rua: "",
@@ -177,7 +178,7 @@ export default {
     },
     async createCli() {
       this.formSubmitted = true;
-      
+
       if (this.cpf === "" || this.nome === "") {
         return;
       }

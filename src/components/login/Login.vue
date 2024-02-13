@@ -5,11 +5,11 @@
         <div class="col-md-12">
           <div class="row shadow-lg rounded">
             <div class="col-md-6 text-center pt-5 pl-4 bg-big">
-              <img src="../assets/rc20.jpg" alt="logo" style="width: 20em" />
+              <img src="../../assets/rc20.jpg" alt="logo" style="width: 20em" />
               <div class="my-5 text-white">
                 <h4><strong>MERCADINHO O FABIO</strong></h4>
                 <h5>
-                  <em><span>OBRIGADO, VOLTE SEMPRE .</span></em>
+                  <em><span>OBRIGADO, VOLTE SEMPRE.</span></em>
                 </h5>
                 <i class="bi bi-shop-window"></i>
               </div>

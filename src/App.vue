@@ -34,10 +34,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
+}
+
+.col-md-2{
+  width: 13.66666667%;
+}
+.col-md-10{
+  width: 85.66666667%;
 }
 
 .sidebar {

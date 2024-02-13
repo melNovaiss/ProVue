@@ -1,22 +1,842 @@
 {
   "clientes": [
     {
-      "id": "68fb",
-      "cpf": "777.777.777-77",
+      "id": "58ca",
+      "cpf": "11111111111111",
       "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
-      "dtCad": "08/02/2024, 10:05:41",
+      "dtCad": "13/02/2024, 01:04:55",
       "endereco": {
-        "rua": "",
-        "bairro": "",
-        "cidade": "",
-        "num": "",
-        "cod": "",
-        "uf": "",
-        "compl": ""
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
       },
       "contato": {
         "tel": "",
-        "cel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "58ca",
+      "cpf": "11111111111111",
+      "nome": "MEL ANNY NOVAIS DE CASTRO SILVA",
+      "dtCad": "13/02/2024, 01:04:55",
+      "endereco": {
+        "rua": "Travessa do Riacho",
+        "bairro": "Antônio Bezerra",
+        "cidade": "Fortaleza",
+        "num": "4888",
+        "cod": "2304400",
+        "uf": "CE",
+        "compl": "teste",
+        "cep": "60360-403"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "(85) 98932-5064",
+        "email": ""
+      }
+    },
+    {
+      "id": "1d61",
+      "cpf": "1234567891234",
+      "nome": "a a a a a  a a a aaaaaa a a a aaaaaa a a a  a a a a aa",
+      "dtCad": "13/02/2024, 19:22:58",
+      "endereco": {
+        "rua": "Rua João Ferreira Pinto",
+        "bairro": "Carnaubinha",
+        "cidade": "Pacatuba",
+        "num": "14",
+        "cod": "2309706",
+        "uf": "CE",
+        "compl": "",
+        "cep": "61801-375"
+      },
+      "contato": {
+        "tel": "",
+        "cel": "85989325064",
         "email": ""
       }
     }
