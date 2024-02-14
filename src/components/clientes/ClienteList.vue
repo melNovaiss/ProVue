@@ -19,7 +19,7 @@
   <Pagination
     :currentPage="currentPage"
     :totalPages="totalPages"
-    @page-changed="handlePageChange"
+    @page-changed="pageChange"
   />
 
   <div class="shadow-sm tb_height">
@@ -95,11 +95,13 @@ export default {
     // Função para atualizar a lista de clientes exibidos com base na página atual
     updateCli() {
       const startIndex = (this.currentPage - 1) * this.pageSize;
+      console.log(startIndex)
       const endIndex = Math.min(startIndex + this.pageSize, this.totalClientes);
+      console.log(endIndex)
       this.cliList = this.clientes.slice(startIndex, endIndex);
     },
     // Função para a alteração de página
-    handlePageChange(page) {
+    pageChange(page) {
       this.currentPage = page;
       this.updateCli();
     },
@@ -109,8 +111,9 @@ export default {
         : "http://localhost:3000/clientes";
 
       try {
-        const response = await axios.get(url);
-        this.clientes = response.data;
+        const res = await axios.get(url);
+        console.log(res);
+        this.clientes = res.data;
         this.totalClientes = this.clientes.length;
         this.totalPages = Math.ceil(this.totalClientes / this.pageSize);
         this.updateCli();
