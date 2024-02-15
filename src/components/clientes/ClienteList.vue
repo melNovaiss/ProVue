@@ -77,9 +77,10 @@
 <script>
 import axios from "axios";
 import Pagination from "../Pagination.vue";
+import CliTable from "../clientes/ClientesTable.vue";
 
 export default {
-  components: { Pagination },
+  components: { Pagination, CliTable },
   name: "CliList",
   data() {
     return {
@@ -95,9 +96,9 @@ export default {
     // Função para atualizar a lista de clientes exibidos com base na página atual
     updateCli() {
       const startIndex = (this.currentPage - 1) * this.pageSize;
-      console.log(startIndex)
+      console.log(startIndex);
       const endIndex = Math.min(startIndex + this.pageSize, this.totalClientes);
-      console.log(endIndex)
+      console.log(endIndex);
       this.cliList = this.clientes.slice(startIndex, endIndex);
     },
     // Função para a alteração de página
