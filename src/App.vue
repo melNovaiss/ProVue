@@ -41,10 +41,10 @@ body {
 }
 
 .col-md-2{
-  width: 13.66666667%;
+  width: 13.5%;
 }
 .col-md-10{
-  width: 85.66666667%;
+  width: 86.5%;
 }
 
 .sidebar {

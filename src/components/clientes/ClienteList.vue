@@ -1,26 +1,31 @@
 <template>
-  <form class="d-flex mx-5 shadow-sm mb-3" role="search" @submit="realizarBusca">
-    <div class="input-group input-group-sm">
-      <input
-        v-model="termoBusca"
-        type="text"
-        class="form-control"
-        placeholder="Código ou Nome"
-      />
-      <button class="btn btn-outline-primary" type="submit">
-        <i class="bi bi-search"></i>
-      </button>
-      <button class="btn btn-outline-success" type="button" @click="limparForm">
-        Incluir
-      </button>
+  <div class="row">
+    <div class="col-md-7 pe-0">
+      <form class="shadow-sm" role="search" @submit="realizarBusca">
+        <div class="input-group input-group-sm">
+          <input
+            v-model="termoBusca"
+            type="text"
+            class="form-control"
+            placeholder="Código ou Nome"
+          />
+          <button class="btn btn-primary" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="btn btn-success" type="button" @click="limparForm">
+            Incluir
+          </button>
+        </div>
+      </form>
     </div>
-  </form>
-
-  <Pagination
-    :currentPage="currentPage"
-    :totalPages="totalPages"
-    @page-changed="handlePageChange"
-  />
+    <div class="col-md-5">
+      <Pagination
+        :currentPage="currentPage"
+        :totalPages="totalPages"
+        @page-changed="handlePageChange"
+      />
+    </div>
+  </div>
 
   <div class="shadow-sm tb_height">
     <table class="table table-striped">
@@ -85,7 +90,7 @@ export default {
     return {
       cliList: [],
       currentPage: 1,
-      pageSize: 5,
+      pageSize: 8,
       totalClientes: 0,
       clientes: [],
       termoBusca: "",
