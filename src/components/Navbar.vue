@@ -5,7 +5,7 @@
         <span>TESTE</span>
         <span>Data Expiração: <span class="badge text-bg-big">30/10/2024</span></span>
       </div>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center aaa">
         <span>SUPORTE BIG</span>
         <div class="dropdown">
           <button
@@ -57,11 +57,13 @@ export default {
 .bi {
   padding-right: 0.8rem;
 }
+
 span {
   font-size: 0.85rem;
   opacity: 1;
   color: rgba(33, 37, 41, 0.75);
 }
+
 .text-bg-big {
   background-color: #00b1b0;
   color: white;
@@ -71,6 +73,15 @@ span {
 .dropdown-menu {
   left: -100px;
 }
+.btn {
+  border: none;
+}
+
+/* .btn:hover {
+  background-color: rgba(201, 201, 201, 0.192);
+  cursor: pointer;
+} */
+
 /* .dropdown-menu > li:active {
   background-color: #00b1b0;
 } */

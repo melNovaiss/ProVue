@@ -17,7 +17,9 @@
   </form>
   <div class="row">
     <div class="col-md-7">
-      <p class="text-body-tertiary pt-1 mb-0"><i class="bi bi-list-ol"></i> {{ totalClientes }} registros</p>
+      <p class="text-body-tertiary pt-1 mb-0">
+        <i class="bi bi-list-ol"></i> {{ totalClientes }} registros
+      </p>
     </div>
     <div class="col-md-5">
       <Pagination
@@ -28,9 +30,7 @@
     </div>
   </div>
 
-  
-
-  <div class="shadow-sm tb_height">
+  <div class="shadow-sm tb_height" v-if="totalClientes > 0">
     <table class="table table-striped">
       <thead>
         <tr>
@@ -80,6 +80,10 @@
       </tbody>
     </table>
   </div>
+
+  <div class="text-center" v-else>
+    <span><i class="bi bi-x-circle text-danger"></i> Não há clientes cadastrados.</span>
+  </div>
 </template>
 
 <script>
@@ -94,7 +98,7 @@ export default {
     return {
       cliList: [],
       currentPage: 1,
-      pageSize: 8,
+      pageSize: 7,
       totalClientes: 0,
       clientes: [],
       termoBusca: "",
