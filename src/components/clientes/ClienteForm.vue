@@ -69,15 +69,18 @@
             <label class="form-label">CPF/CNPJ *</label>
             <div class="input-group mb-3">
               <span class="input-group-text shadow-sm">
-                <i :class="cpf.length <= 11 ? 'bi bi-person-fill' : 'bi bi-building-fill'"></i>
+                <i
+                  :class="cpf.length <= 14 ? 'bi bi-person-fill' : 'bi bi-building-fill'"
+                ></i>
               </span>
               <input
                 type="text"
                 class="form-control"
                 id="cpf"
                 v-model="cpf"
+                @input="formatarCPF"
                 required="required"
-                maxlength="14"
+                maxlength="18"
               />
             </div>
           </div>
@@ -136,6 +139,8 @@
 </template>
 
 <script>
+import { formatarCPF } from "../../assets/js/mask";
+
 import Endereco from "@/components/Endereco.vue";
 import Contato from "@/components/Contato.vue";
 import axios from "axios";
@@ -164,6 +169,9 @@ export default {
     };
   },
   methods: {
+    formatarCPF() {
+      this.cpf = formatarCPF(this.cpf);
+    },
     formatarData(data) {
       const options = {
         year: "numeric",

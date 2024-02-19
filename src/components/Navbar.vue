@@ -60,11 +60,18 @@ export default {
 span {
   font-size: 0.85rem;
   opacity: 1;
-  color: rgba(33, 37, 41, 0.75);;
+  color: rgba(33, 37, 41, 0.75);
 }
 .text-bg-big {
   background-color: #00b1b0;
   color: white;
   font-size: 0.6rem;
 }
+
+.dropdown-menu {
+  left: -100px;
+}
+/* .dropdown-menu > li:active {
+  background-color: #00b1b0;
+} */
 </style>
