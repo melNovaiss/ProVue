@@ -1,5 +1,5 @@
 <template>
-  <form class="d-flex mx-5 shadow-sm mb-3" role="search" @submit="realizarBusca">
+  <form class="shadow-sm mb-3 mx-5" role="search" @submit="realizarBusca">
     <div class="input-group input-group-sm">
       <input
         v-model="termoBusca"
@@ -15,12 +15,20 @@
       </button>
     </div>
   </form>
+  <div class="row">
+    <div class="col-md-7">
+      <p class="text-body-tertiary pt-1 mb-0"><i class="bi bi-list-ol"></i> {{ totalClientes }} registros</p>
+    </div>
+    <div class="col-md-5">
+      <Pagination
+        :currentPage="currentPage"
+        :totalPages="totalPages"
+        @page-changed="pageChange"
+      />
+    </div>
+  </div>
 
-  <Pagination
-    :currentPage="currentPage"
-    :totalPages="totalPages"
-    @page-changed="handlePageChange"
-  />
+  
 
   <div class="shadow-sm tb_height">
     <table class="table table-striped">
@@ -113,7 +121,6 @@ export default {
 
       try {
         const res = await axios.get(url);
-        console.log(res);
         this.clientes = res.data;
         this.totalClientes = this.clientes.length;
         this.totalPages = Math.ceil(this.totalClientes / this.pageSize);

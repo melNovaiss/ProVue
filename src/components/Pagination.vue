@@ -1,5 +1,5 @@
 <template>
-  <nav aria-label="Page navigation example shadow-sm">
+  <nav aria-label="Page navigation example">
     <ul class="pagination pagination-sm justify-content-end">
       <li class="page-item" :class="{ disabled: currentPage === 1 }">
         <a class="page-link" aria-label="First" @click="firstPage">
