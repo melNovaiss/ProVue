@@ -1,4 +1,10 @@
 {
+  "users": [
+    {
+      "id": "99",
+      "password": "1234"
+    }
+  ],
   "clientes": [
     {
       "id": "51fa",

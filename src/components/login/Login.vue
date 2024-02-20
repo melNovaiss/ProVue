@@ -16,12 +16,19 @@
             </div>
             <div class="col-md-6 pt-5 bg-white text-center">
               <h4 class="text-gray-900 mb-4">Bem Vindo!</h4>
-              <form class="mx-5">
+              <form
+                class="mx-5"
+                @submit.prevent="login"
+                :class="{
+                  'was-validated': formSubmitted && (id === '' || password === ''),
+                }"
+              >
                 <div class="mb-3">
                   <input
                     type="text"
                     class="form-control rounded-pill"
-                    id="exampleInputEmail1"
+                    id="id"
+                    v-model="id"
                     placeholder="Usuário"
                   />
                 </div>
@@ -29,15 +36,16 @@
                   <input
                     type="password"
                     class="form-control rounded-pill"
-                    id="exampleInputEmail1"
+                    id="password"
+                    v-model="password"
                     placeholder="Senha"
                   />
                 </div>
 
                 <div class="d-grid gap-2">
-                  <router-link class="btn bg-big text-white rounded-pill" type="button" to="/">
+                  <button class="btn bg-big text-white rounded-pill" type="submit">
                     Acessar
-                  </router-link>
+                  </button>
                 </div>
               </form>
             </div>
@@ -47,6 +55,51 @@
     </div>
   </div>
 </template>
+
+<script>
+import axios from "axios";
+export default {
+  name: "loginForm",
+  data() {
+    return {
+      id: "",
+      password: "",
+      formSubmitted: false,
+      loginError: false,
+    };
+  },
+  methods: {
+    async login() {
+      this.formSubmitted = true;
+
+      if (this.id === "" || this.password === "") {
+        return;
+      }
+
+      try {
+        const response = await axios.get(`http://localhost:3000/users/${this.id}`);
+        const userData = response.data;
+
+        if (userData && userData.password === this.password) {
+          localStorage.setItem("user", userData.id);
+          localStorage.setItem("token", "ok");
+          this.$router.push("/");
+        } else {
+          console.log("ID ou senha incorretos");
+          this.showLoginError();
+        }
+      } catch (error) {
+        console.error(error);
+        this.showLoginError();
+      }
+    },
+
+    showLoginError() {
+      this.loginError = true;
+    },
+  },
+};
+</script>
 
 <style scoped>
 .container {

@@ -108,9 +108,7 @@ export default {
     // Função para atualizar a lista de clientes exibidos com base na página atual
     updateCli() {
       const startIndex = (this.currentPage - 1) * this.pageSize;
-      console.log(startIndex);
       const endIndex = Math.min(startIndex + this.pageSize, this.totalClientes);
-      console.log(endIndex);
       this.cliList = this.clientes.slice(startIndex, endIndex);
     },
     // Função para a alteração de página
