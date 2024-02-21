@@ -22,6 +22,7 @@
                 :class="{
                   'was-validated': formSubmitted && (id === '' || password === ''),
                 }"
+                novalidate
               >
                 <div class="mb-3">
                   <input
@@ -30,6 +31,7 @@
                     id="id"
                     v-model="id"
                     placeholder="Usuário"
+                    required="required"
                   />
                 </div>
                 <div class="mb-3">
@@ -39,7 +41,12 @@
                     id="password"
                     v-model="password"
                     placeholder="Senha"
+                    required="required"
                   />
+                </div>
+
+                <div class="pb-3 text-danger" v-show="loginError">
+                  <i class="bi bi-x-circle"></i> Email ou senha incorretos.
                 </div>
 
                 <div class="d-grid gap-2">
@@ -85,7 +92,7 @@ export default {
           localStorage.setItem("token", "ok");
           this.$router.push("/");
         } else {
-          console.log("ID ou senha incorretos");
+          console.log("id ou senha incorretos");
           this.showLoginError();
         }
       } catch (error) {
@@ -96,6 +103,10 @@ export default {
 
     showLoginError() {
       this.loginError = true;
+      this.password = "";
+      setTimeout(() => {
+        this.loginError = false;
+      }, 3000);
     },
   },
 };

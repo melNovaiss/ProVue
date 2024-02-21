@@ -24,7 +24,7 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li>
-              <router-link class="dropdown-item" to="/login">
+              <router-link class="dropdown-item" to="/login" @click="removeUser">
                 <i class="bi bi-box-arrow-in-right"></i> Sair
               </router-link>
             </li>
@@ -50,6 +50,11 @@
 <script>
 export default {
   name: "Navbar",
+  methods: {
+    removeUser() {
+      localStorage.clear();
+    },
+  },
 };
 </script>
 
