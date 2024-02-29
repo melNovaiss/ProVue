@@ -69,8 +69,7 @@
                 <button
                   type="button"
                   class="btn btn-sm btn-danger"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  @click="deleteCli(c.id)"
                 >
                   <i class="bi bi-trash-fill"></i>
                 </button>
@@ -80,42 +79,6 @@
         </tr>
       </tbody>
     </table>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header h-danger py-2">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Deletar Cliente | </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <h4 class="text-center d-grid">
-              <i class="bi bi-trash3-fill text-danger"></i>Deseja realmente excluir?
-            </h4>
-            <div class="d-flex justify-content-center pt-3">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-danger" @click="deleteCli(c.id)">
-                  Confirmar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="text-center" v-else>
@@ -205,11 +168,6 @@ export default {
 
 .form-control {
   background-color: #f6f9ff;
-}
-
-.h-danger{
-  background-color: #dc3545;
-  color: white;
 }
 
 /* .tb_height {
