@@ -71,6 +71,7 @@
                   class="btn btn-sm btn-danger"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
+                  @click="deleteModal(c)"
                 >
                   <i class="bi bi-trash-fill"></i>
                 </button>
@@ -88,11 +89,13 @@
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
+      v-show="showModal"
+      @hidden="showModal = false"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header h-danger py-2">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Deletar Cliente | </h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Deletar Cliente |</h1>
             <button
               type="button"
               class="btn-close"
@@ -106,8 +109,10 @@
             </h4>
             <div class="d-flex justify-content-center pt-3">
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-danger" @click="deleteCli(c.id)">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Cancelar
+                </button>
+                <button type="button" class="btn btn-danger" @click="deleteCli()">
                   Confirmar
                 </button>
               </div>
@@ -139,6 +144,8 @@ export default {
       totalClientes: 0,
       clientes: [],
       termoBusca: "",
+      clienteToDeleteId: null,
+      showModal: false,
     };
   },
   methods: {
@@ -169,10 +176,16 @@ export default {
       }
     },
 
-    async deleteCli(id) {
+    deleteModal(c) {
+      this.clienteToDeleteId = c.id; // Armazenando o ID do cliente a ser excluído
+      this.showModal = true; // Exibindo o modal
+    },
+
+    async deleteCli() {
       try {
-        await axios.delete(`http://localhost:3000/clientes/${id}`);
+        await axios.delete(`http://localhost:3000/clientes/${this.clienteToDeleteId}`);
         this.getClientes();
+        this.showModal = false; // Fechar o modal após a exclusão bem-sucedida
       } catch (error) {
         console.error("Erro ao excluir cliente:", error);
       }
@@ -207,7 +220,7 @@ export default {
   background-color: #f6f9ff;
 }
 
-.h-danger{
+.h-danger {
   background-color: #dc3545;
   color: white;
 }
