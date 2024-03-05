@@ -32,6 +32,7 @@
                     v-model="id"
                     placeholder="Usuário"
                     required="required"
+                    @keyup.enter="nextInput"
                   />
                 </div>
                 <div class="mb-3">
@@ -107,6 +108,10 @@ export default {
       setTimeout(() => {
         this.loginError = false;
       }, 3000);
+    },
+
+    nextInput() {
+      document.getElementById("password").focus();
     },
   },
 };
