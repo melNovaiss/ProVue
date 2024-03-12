@@ -10,7 +10,7 @@
       <button class="btn btn-outline-primary" type="submit">
         <i class="bi bi-search"></i>
       </button>
-      <button class="btn btn-outline-success" type="button" @click="limparForm">
+      <button class="btn btn-outline-success" type="button" @click="limparForm()">
         Incluir
       </button>
     </div>
@@ -201,10 +201,10 @@ export default {
       await this.getClientes(this.termoBusca);
     },
 
-    // limparFormulario() {
-    //   this.termoBusca = "";
-    //   this.clientes = [];
-    // },
+    limparForm() {
+      this.termoBusca = "";
+      this.clientes = [];
+    },
   },
 
   mounted() {
@@ -229,17 +229,4 @@ export default {
   background-color: #dc3545;
   color: white;
 }
-
-/* .tb_height {
-  height: calc(100vh - 181px);
-  overflow-y: auto;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #88888820;
-} */
 </style>
