@@ -185,7 +185,12 @@ export default {
       try {
         await axios.delete(`http://localhost:3000/clientes/${this.clienteToDeleteId}`);
         this.getClientes();
-        this.showModal = false; // Fechar o modal após a exclusão bem-sucedida
+        this.showModal = false;
+
+        setTimeout(() => {
+          const backdrop = document.querySelector(".modal-backdrop");
+          backdrop.classList.remove("show");
+        }, 100);
       } catch (error) {
         console.error("Erro ao excluir cliente:", error);
       }
