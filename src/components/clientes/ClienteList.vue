@@ -189,7 +189,7 @@ export default {
 
         setTimeout(() => {
           const backdrop = document.querySelector(".modal-backdrop");
-          backdrop.classList.remove("show");
+          backdrop.parentNode.removeChild(backdrop);
         }, 100);
       } catch (error) {
         console.error("Erro ao excluir cliente:", error);

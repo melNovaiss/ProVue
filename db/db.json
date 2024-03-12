@@ -47,46 +47,6 @@
       }
     },
     {
-      "id": "1dcb",
-      "cpf": "777.777.777-77",
-      "nome": "Maria Francilene Novais Da Silva",
-      "dtCad": "29/02/2024, 12:23:15",
-      "endereco": {
-        "rua": "",
-        "bairro": "",
-        "cidade": "",
-        "num": "",
-        "cod": "",
-        "uf": "",
-        "compl": ""
-      },
-      "contato": {
-        "tel": "",
-        "cel": "",
-        "email": ""
-      }
-    },
-    {
-      "id": "1dcb",
-      "cpf": "777.777.777-77",
-      "nome": "Maria Francilene Novais Da Silva",
-      "dtCad": "29/02/2024, 12:23:15",
-      "endereco": {
-        "rua": "",
-        "bairro": "",
-        "cidade": "",
-        "num": "",
-        "cod": "",
-        "uf": "",
-        "compl": ""
-      },
-      "contato": {
-        "tel": "",
-        "cel": "",
-        "email": ""
-      }
-    },
-    {
       "id": "fca3",
       "cpf": "111.111.111-11",
       "nome": "a",
