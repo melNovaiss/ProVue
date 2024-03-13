@@ -14,3 +14,17 @@ export function formatarCPF(cpf) {
 
   return cpf;
 }
+
+export function formatarCel(cel) {
+  cel = cel.replace(/\D/g, "");
+  cel = cel.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+
+  return cel;
+}
+
+export function formatarTel(tel) {
+  tel = tel.replace(/\D/g, "");
+  tel = tel.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
+
+  return tel;
+}
