@@ -160,6 +160,7 @@ export default {
       this.currentPage = page;
       this.updateCli();
     },
+    
     async getClientes(termoBusca = "") {
       const url = termoBusca
         ? `http://localhost:3000/clientes?q=${termoBusca}`
