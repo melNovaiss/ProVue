@@ -2,9 +2,9 @@
   <hr class="my-0" />
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link px-4 textSid" href="/">
+      <router-link class="nav-link px-4 textSid" to="/">
         <i class="bi bi-house"></i>
-        Inicio</a
+        Inicio</router-link
       >
     </li>
     <li class="nav-item">
@@ -28,10 +28,10 @@
             <div class="accordion-body m-3 px-2 rounded">
               <ul class="navbar-nav" style="height: auto">
                 <li class="nav-item px-2">
-                  <a class="nav-link textSid" href="/clientes"> Clientes</a>
+                  <router-link class="nav-link textSid" to="/clientes"> Clientes</router-link>
                 </li>
                 <li class="nav-item px-2">
-                  <a class="nav-link textSid" href="/funcionarios"> Funcionários</a>
+                  <router-link class="nav-link textSid" to="/funcionarios"> Funcionários</router-link>
                 </li>
               </ul>
             </div>
