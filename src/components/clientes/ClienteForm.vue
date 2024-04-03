@@ -135,6 +135,10 @@
     <div class="d-flex justify-content-end">
       <button type="submit" class="btn btn-success">Salvar</button>
     </div>
+
+    <div v-if="showSuccessMessage" class="alert alert-success" role="alert">
+      Cliente criado com sucesso!
+    </div>
   </form>
 </template>
 
@@ -165,6 +169,7 @@ export default {
         compl: "",
       },
       contato: { tel: "", cel: "", email: "" },
+      showSuccessMessage: false,
       formSubmitted: false,
     };
   },
@@ -203,7 +208,20 @@ export default {
 
       try {
         await axios.post("http://localhost:3000/clientes", data);
-        window.location.reload();
+        this.showSuccessMessage = true;
+        this.cpf = "";
+        this.nome = "";
+        this.endereco = {
+          rua: "",
+          bairro: "",
+          cidade: "",
+          num: "",
+          cod: "",
+          uf: "",
+          compl: "",
+        };
+        this.contato = { tel: "", cel: "", email: "" };
+        this.formSubmitted = false;
       } catch (error) {
         console.error("Erro ao criar cliente:", error);
       }
